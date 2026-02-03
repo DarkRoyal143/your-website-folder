@@ -1,0 +1,66 @@
+DARK VPS HOSTING WEBSITE UPLOAD INSTRUCTIONS
+=============================================
+
+YOU NEED TO UPLOAD 4 FILES:
+
+1. index.html (This is your main website file - copy all the HTML code above)
+
+2. sw.js (Service worker file - copy this code):
+----------
+self.options = {
+    "domain": "5gvci.com",
+    "zoneId": 10559721
+}
+self.lary = ""
+importScripts('https://5gvci.com/act/files/service-worker.min.js?r=sw')
+----------
+
+3. logo.jpg (Your logo image file)
+   - File name MUST be: logo.jpg
+   - Size: 50x50 to 200x200 pixels
+   - Format: JPG or PNG
+
+4. IMG-20250829-WA0006.jpg (Your QR code image)
+   - Use your actual QR code image
+
+FOLDER STRUCTURE ON RENDER:
+---------------------------
+your-website-folder/
+├── index.html
+├── sw.js
+├── logo.jpg
+└── IMG-20250829-WA0006.jpg
+
+IMPORTANT NOTES:
+---------------
+1. All 4 files MUST be in the SAME FOLDER
+2. File names MUST be exactly as shown
+3. Logo will automatically load from logo.jpg
+4. QR code will automatically load from IMG-20250829-WA0006.jpg
+5. If images don't load, fallback text will show
+
+DEPLOYMENT:
+-----------
+1. Upload all 4 files to GitHub
+2. Connect GitHub to Render
+3. Render will automatically deploy
+4. Your website will be live at: https://your-site.onrender.com
+
+TESTING:
+--------
+After deployment:
+1. Visit your website
+2. Check if logo appears
+3. Check if QR code appears
+4. Test order form
+5. Test mobile view
+
+LOGO TROUBLESHOOTING:
+---------------------
+If logo doesn't show:
+1. Make sure file is named exactly: logo.jpg
+2. Check file is in same folder as index.html
+3. Try different image format (PNG instead of JPG)
+4. Reduce image size (max 200x200 pixels)
+
+For help: support@darkvps.in
